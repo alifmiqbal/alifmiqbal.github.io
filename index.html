@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Alif Muhammad Iqbal - Mechatronics Engineering Student at Politeknik Manufaktur Bandung. Specializing in IoT, Embedded Systems, and Robotics.">
+    <meta name="keywords" content="Mechatronics, IoT, Embedded Systems, Robotics, Portfolio, Engineering">
+    <meta name="author" content="Alif Muhammad Iqbal">
+    <title>Alif Muhammad Iqbal | Mechatronics Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alif Muhammad Iqbal | Mechatronics Engineer">
+    <meta property="og:description" content="Portfolio of Alif Muhammad Iqbal - Mechatronics Engineering Student specializing in IoT, Embedded Systems, and Robotics.">
+    <meta property="og:url" content="https://alifmiqbal.github.io/">
+    <meta property="og:image" content="https://alifmiqbal.github.io/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AMI<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-microchip"></i>
+                <span>Mechatronics Engineering</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="greeting">Hello, I'm</span>
+                <span class="name-text">Alif Muhammad<br>Iqbal</span>
+            </h1>
+            <div class="hero-typing">
+                <span class="typing-prefix">I build </span>
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Highly motivated Mechatronics Engineering student at Politeknik Manufaktur Bandung
+                with a strong focus on Industrial IoT (IIoT) and Automation. A self-taught Embedded
+                Systems and IoT Developer with hands-on experience in creating innovative projects.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+                <a href="./Alif_Muhammad_Iqbal_CV.pdf" class="btn btn-glass" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Awards Won</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Key Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-circuit-board">
+                <div class="circuit-ring ring-1"></div>
+                <div class="circuit-ring ring-2"></div>
+                <div class="circuit-ring ring-3"></div>
+                <div class="circuit-center">
+                    <i class="fas fa-cogs"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Turning Ideas Into <span class="highlight">Mechatronic Solutions</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        I'm a <strong>Mechatronics Engineering Technology</strong> student at
+                        <strong>Politeknik Manufaktur Bandung (PMS-ITB)</strong> (2024–2028), with a strong
+                        focus on <strong>Industrial IoT (IIoT)</strong> and <strong>Automation</strong>.
+                    </p>
+                    <p class="about-text">
+                        Recognized as an international award winner in IoT innovation, I'm a self-taught
+                        Embedded Systems and IoT Developer with hands-on experience in developing
+                        smart industrial solutions and tackling challenges to create innovative projects.
+                    </p>
+                    <p class="about-text">
+                        Previously worked as an <strong>Embedded System Engineer at PT. Naro Smart Technology</strong>,
+                        and currently an <strong>Independent Mechatronics Consultant</strong>. Active member of
+                        <strong>RESP (Robotics Engineer Society of Polman)</strong> in the R&D Division.
+                    </p>
+                    <div class="about-info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>POLMAN Bandung</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Rancaekek, Bandung</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Program</strong>
+                                <span>D4 Mechatronics Eng.</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <strong>Awards</strong>
+                                <span>5+ Competitions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="about-image-wrapper">
+                        <div class="about-placeholder">
+                            <i class="fas fa-robot"></i>
+                            <span>AMI</span>
+                        </div>
+                        <div class="about-decoration dec-1"></div>
+                        <div class="about-decoration dec-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">Building real-world solutions across industry and academia</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item reveal">
+                    <div class="exp-marker"><div class="exp-dot"></div></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Independent Mechatronics Consultant</h3>
+                                <span class="exp-company"><i class="fas fa-briefcase"></i> Self Employed</span>
+                            </div>
+                            <span class="exp-date"><i class="fas fa-calendar"></i> Jul 2024 &ndash; Present</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Designing and prototyping custom mechatronics solutions and automated systems for technical clients.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-marker"><div class="exp-dot"></div></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Mechatronics Engineer</h3>
+                                <span class="exp-company"><i class="fas fa-building"></i> CV. Barokah Tali Persaudaraan</span>
+                            </div>
+                            <span class="exp-date"><i class="fas fa-calendar"></i> Dec 2025 &ndash; Jan 2026</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Contributed to engineering tasks during a professional tenure at the company.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-marker"><div class="exp-dot"></div></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Production Operator (Intern)</h3>
+                                <span class="exp-company"><i class="fas fa-building"></i> CV. Barokah Tali Persaudaraan</span>
+                            </div>
+                            <span class="exp-date"><i class="fas fa-calendar"></i> May &ndash; Jun 2024</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Quality assurance of raw materials before the production process.</li>
+                            <li>Operated and supervised braiding machines during production.</li>
+                            <li>Monitored rope production quality to meet company standards.</li>
+                            <li>Carried out routine machine maintenance to prevent damage.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-marker"><div class="exp-dot"></div></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Embedded System Engineer</h3>
+                                <span class="exp-company"><i class="fas fa-building"></i> PT. Naro Smart Technology</span>
+                            </div>
+                            <span class="exp-date"><i class="fas fa-calendar"></i> Jan &ndash; May 2024</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Built wireless pond monitoring tool with 100m range and modular system.</li>
+                            <li>Developed smart lock systems using fingerprint &amp; RFID for industrial use.</li>
+                            <li>Designed educational IoT systems for vocational students with documentation.</li>
+                            <li>Integrated sensors, microcontrollers, and wireless comms (LoRa, ESP8266).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Organizations -->
+            <div class="section-header reveal" style="margin-top: 80px;">
+                <span class="section-tag"><i class="fas fa-people-group"></i> Organizations</span>
+                <h2 class="section-title">Community <span class="highlight">Involvement</span></h2>
+            </div>
+            <div class="organizations-grid">
+                <div class="org-card reveal">
+                    <div class="org-icon"><i class="fas fa-robot"></i></div>
+                    <div class="org-content">
+                        <h3>RESP &ndash; R&amp;D Division</h3>
+                        <span class="org-place"><i class="fas fa-university"></i> Politeknik Manufaktur Negeri Bandung</span>
+                        <ul>
+                            <li>Conducted advanced research in robotics for industrial innovations.</li>
+                            <li>Mentored junior students by sharing technical insights.</li>
+                            <li>Facilitated knowledge-sharing on practical robotics implementation.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="org-card reveal">
+                    <div class="org-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="org-content">
+                        <h3>E-ROM &ndash; Head of Mechanical Division</h3>
+                        <span class="org-place"><i class="fas fa-university"></i> SMK Negeri 4 Bandung</span>
+                        <ul>
+                            <li>Led mechanical design &amp; assembly team for robotics projects.</li>
+                            <li>Managed division resources and coordinated with other teams.</li>
+                            <li>Supervised fabrication for competition-grade robots.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-code"></i> Skills</span>
+                <h2 class="section-title">My <span class="highlight">Tech Arsenal</span></h2>
+                <p class="section-subtitle">A diverse skillset spanning mechanical, electronic, and software domains</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Technical</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Mechatronics</span>
+                        <span class="skill-tag">Industrial IoT (IIoT)</span>
+                        <span class="skill-tag">Embedded Systems</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Reverse Engineering</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Electronics</span>
+                    </div>
+                </div>
+                <!-- Software & Programming -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Software & Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C# / C++</span>
+                        <span class="skill-tag">Altium Designer</span>
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">ROS</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Interpersonal</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Team Management</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Cross-cultural Collaboration</span>
+                        <span class="skill-tag">Leadership</span>
+                    </div>
+                </div>
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">🇮🇩 Bahasa Indonesia <small>(Native)</small></span>
+                        <span class="skill-tag">🇬🇧 English <small>(Working Proficiency)</small></span>
+                        <span class="skill-tag">🇯🇵 日本語 <small>(Elementary)</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-diagram-project"></i> Projects</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my engineering work across embedded systems, IoT, and
+                    automation</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alifmiqbal/" class="project-link-btn" title="View on GitHub" target="_blank">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">Embedded</span>
+                            <span class="project-tag">Security</span>
+                        </div>
+                        <h3 class="project-title">Industrial Security & Monitoring Systems</h3>
+                        <p class="project-description">
+                            Engineered embedded security prototypes utilizing sensor integration
+                            and real-time data processing for industrial environments.
+                        </p>
+                        <div class="project-tech">
+                            <span>ESP32</span>
+                            <span>Sensors</span>
+                            <span>Real-time Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alifmiqbal/" class="project-link-btn" title="View on GitHub" target="_blank">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">ESP32</span>
+                            <span class="project-tag">Automation</span>
+                            <span class="project-tag">CNC</span>
+                        </div>
+                        <h3 class="project-title">ESP32-Based Embroidery Machine Controller</h3>
+                        <p class="project-description">
+                            Engineered a custom control system using ESP32 to automate embroidery
+                            machine operations with precision motor control.
+                        </p>
+                        <div class="project-tech">
+                            <span>ESP32</span>
+                            <span>C++</span>
+                            <span>Motor Control</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alifmiqbal/" class="project-link-btn" title="View on GitHub" target="_blank">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Firmware</span>
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <h3 class="project-title">Firmware Development for Embroidery Automation</h3>
+                        <p class="project-description">
+                            Developed efficient C++ & Python-based firmware to manage complex motor
+                            synchronization and precision pattern execution for MSMEs' embroidery.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>Motor Sync</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Achievements</span>
+                <h2 class="section-title">Awards & <span class="highlight">Achievements</span></h2>
+                <p class="section-subtitle">Recognition in national and international competitions</p>
+            </div>
+            <div class="achievements-timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon gold">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge best">Best of The Best</div>
+                        <h3>1st Winner – International IoT Innovation Challenge (ISSIC) 2025</h3>
+                        <span class="timeline-organizer"><i class="fas fa-building-columns"></i> Organized by
+                            Universitas Negeri Malang</span>
+                        <p>Won the top prize (Best of The Best) at an international IoT innovation competition,
+                            showcasing cutting-edge Industrial IoT solutions.</p>
+                        <span class="timeline-year">2025 · International</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon gold">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1st Winner – Innovation Robot Category, Technobot Competition 2025</h3>
+                        <span class="timeline-organizer"><i class="fas fa-building-columns"></i> Organized by BRIN
+                            (Badan Riset dan Inovasi Nasional)</span>
+                        <p>Claimed first place in the Innovation Robot category at the Technobot national technology
+                            competition.</p>
+                        <span class="timeline-year">2025 · National</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon gold">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1st Winner – Electronics Competition (LKS) at City Level</h3>
+                        <span class="timeline-organizer"><i class="fas fa-building-columns"></i> Organized by Dinas
+                            Pendidikan (Disdik)</span>
+                        <p>Achieved the highest score in the Electronics LKS competition at city level, demonstrating
+                            exceptional electronics engineering skills.</p>
+                        <span class="timeline-year">City Level</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon silver">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>2nd Winner – Electronics Competition (LKS) at Provincial Level (Jawa Barat)</h3>
+                        <span class="timeline-organizer"><i class="fas fa-building-columns"></i> Organized by Dinas
+                            Pendidikan (Disdik)</span>
+                        <p>Secured second place in the Electronics LKS competition at the Jawa Barat provincial level.
+                        </p>
+                        <span class="timeline-year">Provincial Level · Jawa Barat</span>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-icon bronze">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>4th Runner Up – HaXathon Competition Automation & Industrial IoT</h3>
+                        <span class="timeline-organizer"><i class="fas fa-building-columns"></i> National
+                            Hackathon</span>
+                        <p>Competed and placed in the top ranks of a hackathon focused on Automation and Industrial IoT
+                            solutions.</p>
+                        <span class="timeline-year">National</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-certificate"></i> Certifications</span>
+                <h2 class="section-title">Professional <span class="highlight">Certifications</span></h2>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Altium Education PCB Basic Design Course</h3>
+                    <p>Completion of PCB design fundamentals including schematic capture, layout, and
+                        manufacturing-ready output.</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Fundamental Deep Learning</h3>
+                    <p>Comprehensive understanding of deep learning architectures, neural networks, and practical
+                        applications.</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning for Beginners</h3>
+                    <p>Foundational knowledge in machine learning algorithms, data processing, and model training.</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>JavaScript & Python Programming</h3>
+                    <p>Proficiency in JavaScript and Python for web development, automation, and data engineering.</p>
+                    <div class="cert-badge">
+                        <i class="fas fa-check-circle"></i> Certified
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>National Professional Competency – Electronics Engineering</h3>
+                    <p>Nationally recognized professional certification in Electronics Engineering competency standards.
+                    </p>
+                    <div class="cert-badge professional">
+                        <i class="fas fa-shield-halved"></i> Professional Certificate
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Contact</span>
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <p class="section-subtitle">Have a project in mind or want to collaborate? Let's talk!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:alifmiqbal17@gmail.com">alifmiqbal17@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+6285157037716">+62 851-5703-7716</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Rancaekek, Bandung, Jawa Barat</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4>University</h4>
+                            <span>Politeknik Manufaktur Bandung (PMS-ITB)</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/alifmiqbal/" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alif-muhammad-iqbal/" class="social-link"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/alifmiqbal_17/" class="social-link"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AMI<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by <strong>Alif Muhammad Iqbal</strong>
+                </p>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2026 Alif Muhammad Iqbal. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
